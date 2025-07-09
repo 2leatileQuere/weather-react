@@ -3,7 +3,7 @@ import "./App.css";
 import Weather from "./Weather";
 import WeatherInfo from "./WeatherInfo";
 import WeatherTemperature from "./WeatherTemperature";
-import FormattedDate.js from "./FormattedDate.js";
+import FormattedDate from "./FormattedDate";
 
 export default function App() {
   return (
