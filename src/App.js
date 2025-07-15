@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 import Weather from "./Weather";
+import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Miami" />
+        <Weather defaultCity="Paris" />
         <footer>
           This project was coded by{" "}
           <a
@@ -18,12 +19,21 @@ export default function App() {
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/2leatileQuere/weather-react"
+            href="https://github.com/2leatileQuere"
             target="_blank"
             rel="noreferrer"
           >
-            Open-sourced{" "}
+            open-sourced on Github
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://weather-reactfinal.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
           </a>
+          .
         </footer>
       </div>
     </div>
