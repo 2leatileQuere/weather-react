@@ -35,7 +35,7 @@
   font-size: 13px;
   text-align: center;
   margin: 20px 0;
-  color: #dddddd;
+  color: #211f1f;
 }
 
 .App footer a {
@@ -44,7 +44,6 @@
   font-weight: bold;
 }
 
-/* Input styles */
 input[type="search"] {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid #ffffff44;
@@ -79,7 +78,7 @@ button:hover {
 /* Typography */
 body {
   font-family: "Poppins", sans-serif;
-  color: #f5f5f5;
+  color: #1d0c0c;
   margin: 0;
   background: transparent;
 }
