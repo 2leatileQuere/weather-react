@@ -22,12 +22,12 @@
   z-index: 1;
   max-width: 700px;
   margin: 30px auto;
-  background-color: rgba(30, 30, 30, 0.6); /* Deep charcoal */
+  background-color: rgba(15, 23, 42, 0.85); /* Deep blue glass effect */
   backdrop-filter: blur(12px);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  color: #f5f5f5;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Main text is now white */
 }
 
 /* Footer styling */
@@ -35,26 +35,28 @@
   font-size: 13px;
   text-align: center;
   margin: 20px 0;
-  color: #211f1f;
+  color: #f1f5f9; /* Soft white-gray for footer */
 }
 
 .App footer a {
   text-decoration: none;
-  color: #ff9f63;
+  color: #ff9f63; /* Coral orange accent */
   font-weight: bold;
 }
 
+/* Input styles */
 input[type="search"] {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid #ffffff44;
   color: #fff;
   padding: 8px 12px;
   border-radius: 8px;
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 input[type="search"]::placeholder {
-  color: #eeeeee;
+  color: #dddddd;
 }
 
 /* Button styles */
@@ -68,6 +70,7 @@ button {
   font-weight: 500;
   transition: background 0.3s ease;
   width: 100%;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover,
@@ -78,13 +81,33 @@ button:hover {
 /* Typography */
 body {
   font-family: "Poppins", sans-serif;
-  color: #1d0c0c;
   margin: 0;
   background: transparent;
+  color: #ffffff;
 }
 
+/* Headings */
 h1,
 h2,
 h3 {
   color: #ffffff;
+}
+
+/* Weather icons glow */
+.weather-icon,
+img.weather-icon,
+.forecast-icon {
+  filter: drop-shadow(0 0 4px #ffa94d);
+  transition: transform 0.3s ease;
+}
+
+.weather-icon:hover,
+.forecast-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Forecast day text */
+.forecast-day {
+  color: #ffffff;
+  text-align: center;
 }
