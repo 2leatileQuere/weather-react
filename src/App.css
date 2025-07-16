@@ -1,10 +1,8 @@
-/* App container */
 .App {
   max-width: 700px;
   margin: 30px auto;
 }
 
-/* Video background */
 .bg-video {
   position: fixed;
   top: 0;
@@ -16,35 +14,32 @@
   opacity: 0.5;
 }
 
-/* Glassmorphism main card */
 .App-content {
   position: relative;
   z-index: 1;
   max-width: 700px;
   margin: 30px auto;
-  background-color: rgba(15, 23, 42, 0.85); /* Deep blue glass effect */
+  background-color: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(12px);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  color: #ffffff; /* Main text is now white */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
-/* Footer styling */
 .App footer {
   font-size: 13px;
   text-align: center;
   margin: 20px 0;
-  color: #f1f5f9; /* Soft white-gray for footer */
+  color: #ccc;
 }
 
 .App footer a {
   text-decoration: none;
-  color: #ff9f63; /* Coral orange accent */
+  color: #ff9f63;
   font-weight: bold;
 }
 
-/* Input styles */
 input[type="search"] {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid #ffffff44;
@@ -52,14 +47,12 @@ input[type="search"] {
   padding: 8px 12px;
   border-radius: 8px;
   width: 100%;
-  font-family: "Poppins", sans-serif;
 }
 
 input[type="search"]::placeholder {
-  color: #dddddd;
+  color: #eeeeee;
 }
 
-/* Button styles */
 input[type="submit"],
 button {
   background-color: #ff9f63;
@@ -70,7 +63,6 @@ button {
   font-weight: 500;
   transition: background 0.3s ease;
   width: 100%;
-  cursor: pointer;
 }
 
 input[type="submit"]:hover,
@@ -78,36 +70,22 @@ button:hover {
   background-color: #e6874f;
 }
 
-/* Typography */
 body {
   font-family: "Poppins", sans-serif;
+  color: #ffffff;
   margin: 0;
   background: transparent;
-  color: #ffffff;
 }
 
-/* Headings */
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+label {
   color: #ffffff;
-}
-
-/* Weather icons glow */
-.weather-icon,
-img.weather-icon,
-.forecast-icon {
-  filter: drop-shadow(0 0 4px #ffa94d);
-  transition: transform 0.3s ease;
-}
-
-.weather-icon:hover,
-.forecast-icon:hover {
-  transform: scale(1.1);
-}
-
-/* Forecast day text */
-.forecast-day {
-  color: #ffffff;
-  text-align: center;
 }

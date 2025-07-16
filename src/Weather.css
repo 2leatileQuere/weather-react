@@ -1,14 +1,13 @@
 body {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .Weather {
-  font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid rgb(118, 114, 114);
-  border-radius: 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding: 16px;
   margin: 30px auto;
   max-width: 700px;
+  color: #f5f5f5;
 }
 
 .Weather form {
@@ -16,11 +15,11 @@ body {
 }
 
 .Weather h1 {
-  color: #2e2836;
-  font-size: 24px;
+  color: #ffffff;
+  font-size: 26px;
   font-weight: bold;
   margin: 20px 0 0 0;
-  line-height: 25px;
+  line-height: 32px;
 }
 
 .Weather ul {
@@ -29,11 +28,10 @@ body {
 }
 
 .Weather li {
-  color: #2e2836;
-  opacity: 0.8;
+  color: #eeeeee;
   font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
+  font-weight: 300;
+  line-height: 22px;
   list-style: none;
   padding: 0;
 }
@@ -45,11 +43,10 @@ body {
 }
 
 .Weather .temperature {
-  font-weight: bold;
-  color: rgb(42, 39, 47);
+  font-weight: 500;
+  color: #f5f5f5;
   font-size: 65px;
   line-height: 64px;
-  font-weight: 400;
 }
 
 .Weather .unit {
@@ -58,5 +55,6 @@ body {
   position: relative;
   top: -32px;
   margin-left: 5px;
+  color: #d1d5db;
   line-height: 1;
 }
