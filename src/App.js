@@ -6,12 +6,10 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      {/* 👇 This is your background video */}
       <video autoPlay loop muted playsInline className="bg-video">
-        <source src="/clouds.mp4" type="video/mp4" />
+        <source src={`${process.env.PUBLIC_URL}/clouds.mp4`} type="video/mp4" />
       </video>
 
-      {/* 👇 This is the wrapper div for all visible content */}
       <div className="App-content">
         <div className="container">
           <Weather defaultCity="Paris" />
