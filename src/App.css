@@ -1,20 +1,10 @@
+/* App container */
 .App {
   max-width: 700px;
   margin: 30px auto;
 }
 
-.App footer {
-  font-size: 13px;
-  text-align: right;
-  margin: 20px 0;
-}
-
-.App footer a {
-  text-decoration: none;
-  color: #ff9f63;
-  font-weight: bold;
-}
-
+/* Video background */
 .bg-video {
   position: fixed;
   top: 0;
@@ -23,15 +13,79 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.5; /* Adjust this if it's too light or too dark */
+  opacity: 0.5;
 }
+
+/* Glassmorphism main card */
 .App-content {
   position: relative;
   z-index: 1;
   max-width: 700px;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  color: #f5f5f5;
+}
+
+/* Footer styling */
+.App footer {
+  font-size: 13px;
+  text-align: center;
+  margin: 20px 0;
+  color: #dddddd;
+}
+
+.App footer a {
+  text-decoration: none;
+  color: #ff9f63;
+  font-weight: bold;
+}
+
+/* Input styles */
+input[type="search"] {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff44;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input[type="search"]::placeholder {
+  color: #eeeeee;
+}
+
+/* Button styles */
+input[type="submit"],
+button {
+  background-color: #ff9f63;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #e6874f;
+}
+
+/* Typography */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+  margin: 0;
+  background: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
 }
