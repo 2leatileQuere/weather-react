@@ -1,5 +1,9 @@
 import React from "react";
-
+{
+  "rules": {
+    "no-unused-vars": "off"
+  }
+}
 export default function WeatherTemperature(props) {
   return (
     <div className="WeatherTemperature">
